@@ -1,0 +1,9 @@
+[package]
+name = "simplemdviewer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+qtbridge = { workspace = true }
+markdown = "1.0.0"
+
