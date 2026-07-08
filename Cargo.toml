@@ -1,0 +1,6 @@
+[workspace]
+members = ["basic"]
+resolver = "3"
+
+[workspace.dependencies]
+qtbridge = { git = "https://github.com/qt/qtbridge-rust.git" }
