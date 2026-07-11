@@ -1,0 +1,16 @@
+[package]
+name = "kf-type-lib"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cxx = { workspace = true }
+qtbridge = { workspace = true }
+qtbridge-type-lib = { workspace = true }
+qtbridge-gen-common = { workspace = true }
+qtbridge-build-utils  = { workspace = true }
+qt_type_gen_lib = { workspace = true }
+
+[build-dependencies]
+cxx-build = { workspace = true }
+qtbridge-build-utils = { workspace = true }

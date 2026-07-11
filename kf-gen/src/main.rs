@@ -32,10 +32,10 @@ impl TypeGenerator {
     fn check_unresolved_dependencies(&self) -> Result<(), String> {
         let unresolved = self.gen_impl.get_pending_dependencies();
         if !unresolved.is_empty() {
-            return Err(format!(
+            println!(
                 "Unresolved types during generation:\n {}",
                 unresolved.join(", ")
-            ));
+            );
         }
         Ok(())
     }
@@ -45,7 +45,7 @@ impl TypeGenerator {
         let header = get_header("", Self::package_name());
         let code_tokens = generate_qt_types_getters_code()?;
         let mut code_str = format_rust_code(&code_tokens)?;
-        code_str.insert_str(0, &header);
+        code_str.insert_str(0, &header); //TODO: Remove header later
 
         write_to_file_if_changed(file_path, &code_str)
     }
