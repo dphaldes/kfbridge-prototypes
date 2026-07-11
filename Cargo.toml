@@ -1,6 +1,12 @@
 [workspace]
-members = ["basic", "simplemdviewer"]
+members = ["apps/simple", "apps/simplemdviewer", "kf-gen", "apps/kapp"]
 resolver = "3"
 
 [workspace.dependencies]
 qtbridge = { git = "https://github.com/qt/qtbridge-rust.git" }
+qtbridge-type-lib = { git = "https://github.com/qt/qtbridge-rust.git" }
+qtbridge-gen-common = { git = "https://github.com/qt/qtbridge-rust.git" }
+qtbridge-build-utils  = { git = "https://github.com/qt/qtbridge-rust.git" }
+
+qt_type_gen_lib = { git = "https://github.com/qt/qtbridge-rust.git" }
+kf-gen = { path = "kf-gen" }

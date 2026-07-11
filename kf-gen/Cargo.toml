@@ -1,0 +1,12 @@
+[package]
+name = "kf-gen"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+qtbridge = { workspace = true }
+qtbridge-type-lib = { workspace = true }
+qtbridge-gen-common = { workspace = true }
+qtbridge-build-utils  = { workspace = true }
+qt_type_gen_lib = { workspace = true }
+
