@@ -1,0 +1,15 @@
+[package]
+name = "kf-types"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cxx = { workspace = true }
+qtbridge-type-lib = { workspace = true }
+qtbridge-build-utils  = { workspace = true }
+
+[build-dependencies]
+cc = "1"
+cmake-package = "0.1.10"
+cxx-build = { workspace = true }
+qtbridge-build-utils = { workspace = true }

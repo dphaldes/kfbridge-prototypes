@@ -7,6 +7,7 @@
 #define _KLOCALIZATION_RUST_BRIDGE_H_
 
 #include <KLocalizedQmlContext>
+#include <cstdint>
 #include "rust/cxx.h"
 
 
@@ -20,7 +21,7 @@ namespace rust::bridge::klocalization {
 
 
 
-void inlineCppFn_setupLocalizedContext();
+void inlineCppFn_setupLocalizedContext(int32_t test);
 
 } // namespace rust::bridge::klocalization
 

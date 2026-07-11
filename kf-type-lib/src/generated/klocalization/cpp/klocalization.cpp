@@ -13,7 +13,7 @@ namespace rust::bridge::klocalization {
 
 
 
-void inlineCppFn_setupLocalizedContext()
+void inlineCppFn_setupLocalizedContext(int32_t test)
 {
 todo!();
 }
