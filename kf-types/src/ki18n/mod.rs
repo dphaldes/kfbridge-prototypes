@@ -3,4 +3,6 @@
 
 mod klocalization;
 
-pub use klocalization::setupLocalizedContext;
+pub use klocalization::setup_localized_context;
+
+

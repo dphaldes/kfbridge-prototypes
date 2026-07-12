@@ -6,10 +6,12 @@ use std::pin::Pin;
 #[cxx::bridge]
 mod ffi {
     unsafe extern "C++" {
-        include!("klocalization.h");
+        include!("kf-types/src/ki18n/klocalization.h");
 
-        // include!("qtbridge-type-lib/src/generated/qml/qqmlapplicationengine.h");
-        type QQmlApplicationEngine = qtbridge_type_lib::QQmlApplicationEngine;
+        include!(
+            "qtbridge-type-lib/src/generated/qml/qqmlapplicationengine/cpp/qqmlapplicationengine.h"
+        );
+        type QQmlApplicationEngine = super::QQmlApplicationEngine;
     }
     #[namespace = "rust::bridge::klocalization"]
     unsafe extern "C++" {
@@ -18,6 +20,6 @@ mod ffi {
     }
 }
 #[allow(dead_code)]
-pub fn setupLocalizedContext(engine: Pin<&mut QQmlApplicationEngine>) {
+pub fn setup_localized_context(engine: Pin<&mut QQmlApplicationEngine>) {
     ffi::inline_cpp_fn_setup_localized_context(engine);
 }

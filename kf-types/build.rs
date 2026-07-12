@@ -37,10 +37,11 @@ fn main() {
         }
     });
 
-    let qt_modules = ["Core", "Gui", "Qml"];
+    let qt_modules = ["Core", "Gui", "Qml", "QmlIntegration"];
     for include_dir in qt.include_dirs(qt_modules, true) {
         builder.include(include_dir);
     }
+    let qt_modules = ["Core", "Gui", "Qml"];
     qt.link_modules(qt_modules);
     link_libraries(&mut builder);
 

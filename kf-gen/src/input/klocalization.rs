@@ -5,9 +5,17 @@ use std::pin::Pin;
 mod klocalization {
     include_in_cpp!(<KLocalizedQmlContext>);
 
-    pub fn setupLocalizedContext(test: i32) {
-        cpp_fn!(|test: i32| {
+    // type QQmlApplicationEngine = super::QQmlApplicationEngine;
+
+    // pub fn setupLocalizedContext(engine: Pin<&mut QQmlApplicationEngine>) {
+    //     cpp_fn!(|engine: Pin<&mut QQmlApplicationEngine>| {
+    //         todo!();
+    //     })(engine);
+    // }
+
+    pub fn setupLocalizedContext(engine: i32) {
+        cpp_fn!(|engine: i32| {
             todo!();
-        })(test);
+        })(engine);
     }
 }

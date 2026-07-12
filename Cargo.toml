@@ -13,10 +13,15 @@ resolver = "3"
 [workspace.dependencies]
 cxx = { version = "1.0.158", features = ["c++17", "std"] }
 cxx-build = { version = "1.0.158", features = [ "parallel" ] }
-qtbridge = { git = "https://github.com/qt/qtbridge-rust.git" }
-qtbridge-type-lib = { git = "https://github.com/qt/qtbridge-rust.git" }
-qtbridge-gen-common = { git = "https://github.com/qt/qtbridge-rust.git" }
-qtbridge-build-utils  = { git = "https://github.com/qt/qtbridge-rust.git" }
+qtbridge = { path = "../qtbridge-rust/crates/qtbridge" }
+qtbridge-type-lib = { path = "../qtbridge-rust/crates/qtbridge-type-lib" }
+qtbridge-gen-common = { path = "../qtbridge-rust/crates/qtbridge-gen-common" }
+qtbridge-build-utils = { path = "../qtbridge-rust/crates/qtbridge-build-utils" }
+# qtbridge = { git = "https://github.com/qt/qtbridge-rust.git" }
+# qtbridge-type-lib = { git = "https://github.com/qt/qtbridge-rust.git" }
+# qtbridge-gen-common = { git = "https://github.com/qt/qtbridge-rust.git" }
+# qtbridge-build-utils  = { git = "https://github.com/qt/qtbridge-rust.git" }
 
-qt_type_gen_lib = { git = "https://github.com/qt/qtbridge-rust.git" }
-kf-gen = { path = "kf-gen" }
+qt_type_gen_lib = { path = "../qtbridge-rust/code_gen/qt_type_gen_lib" }
+# qt_type_gen_lib = { git = "https://github.com/qt/qtbridge-rust.git" }
+kf-types = { path = "kf-types" }

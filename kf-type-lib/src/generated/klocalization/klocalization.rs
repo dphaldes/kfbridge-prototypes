@@ -13,10 +13,10 @@ mod ffi {
     #[namespace = "rust::bridge::klocalization"]
     unsafe extern "C++" {
         # [rust_name = inline_cpp_fn_setup_localized_context]
-        fn inlineCppFn_setupLocalizedContext(test: i32);
+        fn inlineCppFn_setupLocalizedContext(engine: i32);
     }
 }
 #[allow(dead_code)]
-pub fn setupLocalizedContext(test: i32) {
-    ffi::inline_cpp_fn_setup_localized_context(test);
+pub fn setupLocalizedContext(engine: i32) {
+    ffi::inline_cpp_fn_setup_localized_context(engine);
 }

@@ -289,6 +289,7 @@ dependencies = [
 name = "kapp"
 version = "0.1.0"
 dependencies = [
+ "kf-types",
  "qtbridge",
 ]
 
@@ -426,7 +427,6 @@ dependencies = [
 [[package]]
 name = "qt_type_gen_lib"
 version = "0.1.0"
-source = "git+https://github.com/qt/qtbridge-rust.git#84c19fa334201dccac3a475dd358cc27560a572c"
 dependencies = [
  "proc-macro2",
  "qtbridge-build-utils",
@@ -438,7 +438,6 @@ dependencies = [
 [[package]]
 name = "qtbridge"
 version = "0.2.0"
-source = "git+https://github.com/qt/qtbridge-rust.git#84c19fa334201dccac3a475dd358cc27560a572c"
 dependencies = [
  "qtbridge-build-utils",
  "qtbridge-gen",
@@ -450,7 +449,6 @@ dependencies = [
 [[package]]
 name = "qtbridge-build-utils"
 version = "0.2.0"
-source = "git+https://github.com/qt/qtbridge-rust.git#84c19fa334201dccac3a475dd358cc27560a572c"
 dependencies = [
  "cc",
  "dirs",
@@ -461,7 +459,6 @@ dependencies = [
 [[package]]
 name = "qtbridge-gen"
 version = "0.2.0"
-source = "git+https://github.com/qt/qtbridge-rust.git#84c19fa334201dccac3a475dd358cc27560a572c"
 dependencies = [
  "proc-macro2",
  "qtbridge-build-utils",
@@ -473,7 +470,6 @@ dependencies = [
 [[package]]
 name = "qtbridge-gen-common"
 version = "0.2.0"
-source = "git+https://github.com/qt/qtbridge-rust.git#84c19fa334201dccac3a475dd358cc27560a572c"
 dependencies = [
  "proc-macro2",
  "qtbridge-build-utils",
@@ -484,7 +480,6 @@ dependencies = [
 [[package]]
 name = "qtbridge-interfaces"
 version = "0.2.0"
-source = "git+https://github.com/qt/qtbridge-rust.git#84c19fa334201dccac3a475dd358cc27560a572c"
 dependencies = [
  "cxx",
  "cxx-build",
@@ -496,7 +491,6 @@ dependencies = [
 [[package]]
 name = "qtbridge-runtime"
 version = "0.2.0"
-source = "git+https://github.com/qt/qtbridge-rust.git#84c19fa334201dccac3a475dd358cc27560a572c"
 dependencies = [
  "cxx",
  "cxx-build",
@@ -507,7 +501,6 @@ dependencies = [
 [[package]]
 name = "qtbridge-type-lib"
 version = "0.2.0"
-source = "git+https://github.com/qt/qtbridge-rust.git#84c19fa334201dccac3a475dd358cc27560a572c"
 dependencies = [
  "cxx",
  "cxx-build",
