@@ -51,7 +51,7 @@ Kirigami.ApplicationWindow {
 
                     Controls.Button {
                         text: qsTr("Format")
-                        onClicked: mdconverter.md_format(sourceArea.text)
+                        onClicked: formattedText.text =  mdconverter.md_format(sourceArea.text)
                     }
 
                     Controls.Button {
@@ -65,8 +65,7 @@ Kirigami.ApplicationWindow {
 
                 Controls.Label {
                     id: formattedText
-                    text: mdconverter.text ?? ""
-
+                    
                     textFormat: Text.RichText
                     wrapMode: Text.WordWrap
                     Layout.fillWidth: true
